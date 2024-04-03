@@ -1,5 +1,6 @@
 @import  url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre&family=Roboto:wght@300&display=swap');
 
+
 #content{
     margin:0 auto;
     background-color: black;
@@ -305,6 +306,7 @@ footer.social img{
 }
 #hero-msg p{
     color: white;
+    margin-top: 130px;
     margin-left: 55rem;
     text-align: justify;
 }
