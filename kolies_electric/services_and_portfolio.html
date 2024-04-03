@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolies's Electric</title>
+    <link rel="stylesheet" href="styles/styles.css" >
+</head>
+<body>
+    <div id="content">
+            <header>
+                <section>
+                    <a id="logo_link" href="index.html" >
+                        <img src="images/kolieselectric.png" alt="K.I.S logo">
+                       </a>
+                </section>
+                <section id="basic">
+                    <h1>LIGHTING EVERY HOME</h1>
+                        <nav>
+                            <a href="index.html">Home</a>
+                            <a href="services_and_portfolio.html" class="active">Services & Portfolio</a>
+                            <a href="faqs.html">FaQs</a>
+                            <a href="contactus.html">Contact Us</a>
+                        </nav>
+                </section>
+            </header>
+        <div id="background"></div> 
+        <main>
+            <div class="msg1">
+                <h1> SERVICES & PORTFOLIO</h1>
+                <h2>SERVICES</h2>
+                <p>At Kolie's Integrated Services, we offer a comprehensive range of electrical services to meet the needs of our valued clients. Our team of 
+                   skilled electricians is experienced in handling various projects, from residential to commercial and industrial. Some of our key services include:</p>
+
+                <p>1. ELECTRICAL INSTALLATION: We specialize in professional electrical installations for new construction projects, renovations, and upgrades.
+                   From wiring and lighting to power distribution systems, we ensure safe and efficient electrical installations tailored to your requirements.</p>
+
+                <p>2. ELECTRICAL REPAIRS: Our expert technicians are proficient in diagnosing and resolving electrical issues promptly. Whether you're experiencing 
+                   faulty wiring, power outages, or malfunctioning fixtures, we provide reliable electrical repair services to restore the functionality of your 
+                   electrical systems.</p>
+
+                <p>3. ELECTRICAL MAINTENACE: Regular maintenance is crucial for the longevity and optimal performance of your electrical systems. Our team offers
+                   comprehensive electrical maintenance services, including inspections, testing, and preventive measures, to keep your systems safe, efficient, 
+                   and compliant with regulations.</p>
+            </div>
+
+            <div class="msg2">
+                <h2>PORTFOLIO</h2>
+                <p>This section contains images of diverse range completed works:</p>
+            </div>
+
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1/5</div>
+                <img src="images/main_1img-20231103-wa0002.jpg" alt="portfolio_1">
+                <div class="text">Image of Maintenance of lighting system on second floor room</div>    
+            </div>
+        
+            <div class="mySlides ">
+                <div class="numbertext">2/5</div>
+                <img src="images/main_img-20231103-wa0013.jpg" alt="portfolio_2">
+                <div class="text">Image of Completed lighting system on the fourth floor</div>    
+            </div>
+        
+            <div class="mySlides ">
+                <div class="numbertext">3/5</div>
+                <img src="images/IMG-20231103-WA0016.jpg" alt="portfolio_3">
+                <div class="text">Image of Completed lighting system in a hall</div>    
+            </div>
+        
+            <div class="mySlides ">
+                <div class="numbertext">4/5</div>
+                <img src="images/IMG-20231103-WA0011.jpg" alt="portfolio_4">
+                <div class="text">Image of ongoing project on Chandelier</div>    
+            </div>
+        
+            <div class="mySlides ">
+                <div class="numbertext">5/5</div>
+                <img src="images/IMG-20231103-WA0007.jpg" alt="portfolio_5">
+                <div class="text">Image of the completed project on Chandelier</div>    
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <div style="text-align:center">
+            <div class="style-dot">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>
+      
+        </main>
+
+        <footer><p>K.I.S &copy; 2023 - Collins Okolie</p>
+            <p><a href="index.html">Home</a></p>
+            <p><a href="faqs.html">FaQs</a></p>
+            <p><a href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div></footer>
+
+    </div>
+    <script>
+    
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+
+             // Find the corresponding navigation link for Services & Portfolio and add the "active" class
+                document.querySelector('header nav a[href="services_and_portfolio.html"]').classList.add('active');
+        </script>
+</body>
+</html>
+
+        

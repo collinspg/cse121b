@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolies's Electric</title>
+    <link rel="stylesheet" href="styles/styles.css" >
+</head>
+<body>
+    <div id="content">
+        <header>
+            <section>
+                <a id="logo_link" href="index.html" >
+                    <img src="images/kolieselectric.png" alt="K.I.S logo">
+                   </a>
+            </section>
+            <section id="basic">
+                <h1>LIGHTING EVERY HOME</h1>
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="services_and_portfolio.html" >Services and Portfolio</a>
+                        <a href="faqs.html">FaQs</a>
+                        <a href="contactus.html" class="active">Contact Us</a>
+                    </nav>
+            </section>
+        </header>
+
+    <main>
+        <!-- <div class="container">
+            <form action="action_page.php">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="benin republic">Benin Republic</option>
+                <option value="brazil">Brazil</option>
+                <option value="canada">Canada</option>
+                <option value="ghana">Ghana</option>
+                <option value="kenya">Kenya</option>
+                <option value="liberia">Liberia</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="sierra leone">Sierra Leone</option>
+                <option value="south africa">South Africa</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div> -->
+          <section>
+            <h2>Leave a comment</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <br><br>
+                <label for="purpose">Purpose of Message:</label> 
+                <div>
+                    <label for="purpose">General Inquiry</label>
+                    <input type="radio" id="purpose" name="purpose" value="General Inquiry">
+                </div>
+                <div>
+                    <label for="reservation">Service Request</label>
+                    <input type="radio" id="request" name="purpose" value="Service Request">
+                </div>
+                <div>
+                    <label for="suggestions">Website Suggestions</label>
+                    <input type="radio" id="suggestions" name="purpose" value="Website Suggestion">
+                </div>
+                <br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <br><br>
+                <div>
+                    <label for="news">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="news" name="newsletter">
+                </div>
+                <br><br>
+<button type="submit">Submit</button> 
+            </form>
+        </section>
+</main>
+
+<footer><p>K.I.S &copy; 2023 - Collins Okolie</p>
+    <p><a href="index.html">Home</a></p>
+    <p><a href="services_and_portfolio.html">Services and Portfolio</a></p>
+    <p><a href="faqs.html">FaQs</a></p>
+    <div class="social">
+        <a href="https://facebook.com" target="_blank">
+            <img src="images/facebook.png" alt="fb icon">
+        </a>
+        <a href="https://twitter.com" target="_blank">
+            <img src="images/twitter.png" alt="twitter icon">
+        </a>
+        <a href="https://instagram.com" target="_blank">
+            <img src="images/instagram.png" alt="instagram icon">
+        </a>
+    </div></footer>
+
+<script>
+    document.querySelector('header nav a[href="contactus.html"]').classList.add('active');
+</script>
+</body>
+</html>
